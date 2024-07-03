@@ -28,9 +28,11 @@
   border: none;
   color: white;
   cursor: pointer;
+  transition:all 0.5s;
 }
 .menu-btn:hover {
   text-decoration: none;
+  transition:all 0.5s;
 }
 /* burger menu */
 .menu {
@@ -1693,8 +1695,15 @@
   border-radius: 20px;
   min-width: 352px;
   min-height: 107px;
+  border: 1px solid white;
+  background:transparent;
+  transition: all 0.5s;
+
+}
+.info-banner_button:hover{
   box-shadow: 0 0 19px 0 rgba(180, 35, 88, 0.82);
   background: #b42358;
+  transition: all 0.5s;
 }
 @media screen and (max-width: 1050px) {
   .info-banner {
