@@ -1,0 +1,55 @@
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --second-family: 'Idealist Sans', sans-serif;
+
+  --header-text: white;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family);
+  background: black;
+}
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+ul {
+  padding: 0;
+}
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  color: white;
+}
+/* components */
+/* arrow right */
+.arrow_right {
+  background: url('../assets/preview/arrow_right.svg');
+  border-radius: 100%;
+  border: 1px solid white;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 33px;
+  transition: all 0.5s ease-in;
+}
+.italic{
+  font-style: italic;
+}
+
