@@ -60,13 +60,10 @@
 .language-selector-container {
   box-sizing: border-box;
   display: flex;
-  flex: 0 0 auto;
   flex-direction: row;
-  gap: 16.5px;
+  gap: 16px;
   align-items: center;
   justify-content: flex-start;
-  width: 59.21%;
-  height: 27.5px;
 }
 .primary-heading-style {
   flex: 0 0 auto;
@@ -86,9 +83,7 @@
 }
 .close-button-container {
   box-sizing: border-box;
-  flex: 0 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+
 }
 .close-button-text-style {
   padding: 0;
@@ -248,10 +243,10 @@
 
 @media screen and (max-width: 650px) {
   .gradient-container {
-    min-width: auto;
-    padding: 10px;
+    min-width: 300px;
+    padding: 15px;
   }
-  .flex-row-with-icons-and-contact-info {
+   .flex-row-with-icons-and-contact-info {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -259,6 +254,7 @@
     margin-top: 44px;
   }
 }
+
 /* burger menu */
 /* header */
 /*preview block */
