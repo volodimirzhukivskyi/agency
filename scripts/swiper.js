@@ -52,7 +52,10 @@ function showSliderInfo(type = 'hide') {
 
 // listner button
 function addButtonSliderListner() {
-
+  const screenWidth = window.screen.width;
+  if(screenWidth < 768){
+    showSliderInfo()
+  }
 
   const sliderButtons = document.querySelectorAll('.smm-description__button');
   sliderButtons.forEach((button) => {
