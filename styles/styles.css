@@ -974,8 +974,8 @@
   letter-spacing: -0.04em;
   color: rgba(255, 255, 255, 0.44);
 }
-.smm-description__button .arrow{
-  border: 0.50px solid rgba(255, 255, 255, 0.44);
+.smm-description__button .arrow {
+  border: 0.5px solid rgba(255, 255, 255, 0.44);
   border-radius: 50%;
   display: block;
   width: 14px;
@@ -984,7 +984,7 @@
   justify-content: center;
   align-items: center;
 }
-.smm-description__button .arrow:after{
+.smm-description__button .arrow:after {
   content: url("data:image/svg+xml; utf8, <svg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M2.92852 -0.000281409L2.92847 7.85668M2.92847 7.85668L5.09557 5.09063M2.92847 7.85668L0.731934 5.09063' stroke='white' stroke-opacity='0.5' stroke-width='0.5' /></svg>");
   -webkit-transition: all 0.27s ease-in-out;
   -o-transition: all 0.27s ease-in-out;
@@ -994,9 +994,8 @@
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-
 }
-.smm-description__button[data-show="hide"] .arrow:after{
+.smm-description__button[data-show='hide'] .arrow:after {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
@@ -1059,14 +1058,13 @@
   }
   .promo-section_wrapper {
     flex-direction: column-reverse;
-
   }
   .smm-description_info {
     text-align: left;
   }
 }
 @media screen and (max-width: 800px) {
-  .smm-description{
+  .smm-description {
     text-align: left;
   }
   .promo-content h2 {
@@ -1619,11 +1617,24 @@
 /* maps */
 /* footer */
 .footer {
+  background-color: black;
+  position: relative;
   color: var(--header-text);
   padding: 94px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footer::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  filter: blur(80px);
+  z-index: -1;
+  background: rgba(180, 35, 88, 0.73);
+  width: 100%;
+  height: 100%;
 }
 
 .socials {
@@ -1833,3 +1844,373 @@
 }
 /* info banner 2 */
 /* circle */
+/* contact form  */
+.contact-form {
+  padding: 70px 10px;
+  background: url('../assets/contacts_form/background_small.svg');
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top -60% center;
+}
+.contact-form__title {
+  max-width: 984px;
+  margin: 0 auto 66px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(30px, 3.5vw, 70px);
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.contact-form__title span {
+  text-transform: lowercase;
+}
+.wpcf7 {
+  margin: auto;
+  min-width: 280px;
+  max-width: 670px;
+  border: 1px solid white;
+  padding: 30px 21px;
+  border-radius: 40px;
+  color: white; /* Білий колір тексту */
+  font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
+}
+
+.wpcf7 p {
+  margin: 0;
+}
+.wpcf7-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.wpcf7 div.wpcf7-response-output {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Стилі для полів введення */
+.wpcf7 input[type='text'],
+.wpcf7 input[type='tel'],
+.wpcf7 textarea,
+.wpcf7 select,
+.new-select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 17px;
+  border: 1px solid #fff;
+  font-size: clamp(12px, 3.5vw, 18px);
+  background-color: transparent;
+  border-radius: 10px;
+  color: white; /* Білий колір тексту */
+  outline: none;
+}
+
+/* Стилі для міток */
+.wpcf7 label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 700;
+  font-size: clamp(12px, 3.5vw, 18px);
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+/* Стилі для чекбоксів */
+.wpcf7 input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+/* Стилі для кнопки */
+.wpcf7 input[type='submit'] {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-size: clamp(12px, 3.5vw, 21px);
+  background: none;
+  color: white;
+  padding: 20px 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Плавний перехід кольору */
+}
+
+.wpcf7 input[type='submit']:hover {
+  background-color: #b42358;
+  border: 1px solid transparent;
+}
+
+/* Стилі для placeholder */
+.wpcf7 input::placeholder,
+.wpcf7 textarea::placeholder {
+  font-weight: 400;
+  font-size: clamp(12px, 3.5vw, 18px);
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.38);
+}
+.wpcf7 input[type='tel']::placeholder {
+  color: white;
+}
+
+.last-main-input {
+  margin-bottom: 22px;
+}
+.wpcf7-checkbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.wpcf7-checkbox label {
+  position: relative;
+  cursor: pointer;
+}
+
+.wpcf7-checkbox label:before {
+  content: '';
+
+  width: 44px;
+  height: 44px;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 0.5px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  /* padding: 10px; */
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  /* margin-right: 5px; */
+}
+.wpcf7-checkbox input:checked + label:before {
+  border: 1px solid transparent;
+  background: #b42358;
+}
+.wpcf7-checkbox label svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.wpcf7-checkbox {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 18px;
+}
+
+.wpcf7-acceptance input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.wpcf7-acceptance label {
+  margin-bottom: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.wpcf7-acceptance label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 0.5px solid #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.wpcf7-acceptance input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  width: 6px;
+  height: 11px;
+  border: solid #b42358;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.wpcf7-list-item {
+  display: flex;
+  flex-direction: row;
+}
+.primary-text_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-weight: 400;
+  font-size: clamp(10px, 3.5vw, 15px);
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.primary-text_wrapper .primary {
+  font-style: italic;
+  font-weight: 600;
+  color: #b42358;
+}
+
+.select {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.new-select {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  gap: 10px;
+
+  font-weight: 400;
+  font-size: clamp(10px, 3.5vw, 18px);
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.new-select__list {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  border: 1px solid white;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+  background: #fff;
+  user-select: none;
+  box-shadow: #b42358 0px 7px 29px 0px;
+}
+
+.new-select__list.on {
+  display: block;
+}
+
+.new-select__item span {
+  display: block;
+  padding: 10px 15px;
+  background-color: black;
+  font-weight: 400;
+  font-size: clamp(12px, 3.5vw, 18px);
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.new-select__item span:hover {
+  color: #b42358;
+}
+
+.new-select:after {
+  content: url("data:image/svg+xml; utf8, <svg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M3.43579 -0.000244377L3.43579 10.8713M3.43579 10.8713L6.43435 7.044M3.43579 10.8713L0.396443 7.04397' stroke='white'/></svg>");
+  display: block;
+
+  -webkit-transition: all 0.27s ease-in-out;
+  -o-transition: all 0.27s ease-in-out;
+  transition: all 0.27s ease-in-out;
+
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.new-select.on:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* phone mask*/
+.wpcf7-form-control-wrap.tel-564 {
+  position: relative;
+}
+.wpcf7-form-control-wrap.tel-564 img {
+  width: 17px;
+  position: absolute;
+  top: 0;
+  left: 17px;
+  bottom: 0;
+  margin: auto;
+}
+.wpcf7-form-control-wrap.tel-564 input {
+  padding-left: 44px;
+}
+@media screen and (max-width: 360px) {
+  .wpcf7 {
+    padding: 20px 11px;
+  }
+  @media screen and (min-width: 400px) {
+    .contact-form {
+      background: url(../assets/contacts_form/background.svg);
+      background-position: top -500% center;
+      background-size: 99% 95%;
+    }
+  }
+
+  .wpcf7 input[type='submit'] {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 468px) {
+  .wpcf7 {
+    padding: 40px;
+  }
+  .wpcf7 label {
+    gap: 13px;
+  }
+  .wpcf7 input[type='submit'] {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .contact-form {
+    padding: 223px 10px 219px;
+    background-position: top -500% center;
+    background-size: 99% 95%;
+  }
+  .wpcf7 {
+    box-sizing: border-box;
+    padding: 90px;
+  }
+  .wpcf7-form {
+    gap: 41px;
+  }
+  .primary-text_wrapper {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+}
+@media screen and (min-width:1330px) {
+  .footer::after{
+    width:70%;
+    margin: auto;
+  }
+
+}
+/* contact form  */
