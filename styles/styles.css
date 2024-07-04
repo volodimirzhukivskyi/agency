@@ -1043,7 +1043,7 @@
     width: 57%;
   }
 }
-@media screen and (max-width: 448px) {
+@media screen and (max-width: 468px) {
   .step-number {
     width: 29px;
     height: 29px;
@@ -1522,7 +1522,7 @@
   }
   .steps-block .step-number:after {
     content: '';
-    top: 220%;
+    top: 240%;
     background-color: white;
     width: 1px;
     height: 40px;
