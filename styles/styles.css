@@ -1215,17 +1215,27 @@
 @media (max-width: 768px) {
   .list {
     gap: 0;
-    background-size: 200% 200%;
   }
+  .list {
 
+    background-image: url('../assets/7_options/background_long.svg');
+    background-position: center center;
+    background-size: 100% 100%;
+  }
+  .list-item{
+    padding: 0;
+  }
   .list-item p {
-    width: 230px;
+    width: 250px;
   }
 }
 
 @media (max-width: 400px) {
+  .list {
+    background-size: 100% 100%;
+  }
   .list-item p {
-    width: 160px;
+    width: 200px;
   }
 }
 /* 7 причин для вибору  */
@@ -1559,9 +1569,10 @@
 }
 .maps {
   overflow: hidden;
-  background-image: url('../assets/maps/background.svg');
-  background-position: center top;
+  background-image: url(../assets/maps/background.svg);
+  background-position: bottom center;
   background-repeat: no-repeat;
+  background-size: 150% 90%;
 }
 .maps_wrapper {
   display: flex;
@@ -1605,6 +1616,7 @@
 }
 @media screen and (max-width: 850px) {
   .footer {
+    padding: 40px 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 17px;
@@ -1618,7 +1630,13 @@
     grid-row: 1;
   }
 }
+
+
+
 @media screen and (max-width: 550px) {
+  .footer{
+    padding: 23px 10px;
+  }
   .footer_info {
     display: none;
   }
