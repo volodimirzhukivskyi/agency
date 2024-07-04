@@ -83,7 +83,6 @@
 }
 .close-button-container {
   box-sizing: border-box;
-
 }
 .close-button-text-style {
   padding: 0;
@@ -246,7 +245,7 @@
     min-width: 300px;
     padding: 15px;
   }
-   .flex-row-with-icons-and-contact-info {
+  .flex-row-with-icons-and-contact-info {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -962,6 +961,47 @@
   font-size: clamp(10px, 4vw, 18px);
   color: #fff;
 }
+.smm-description__button {
+  padding: 10px 0;
+  display: flex;
+  margin-top: 5px;
+  gap: 8px;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.44);
+}
+.smm-description__button .arrow{
+  border: 0.50px solid rgba(255, 255, 255, 0.44);
+  border-radius: 50%;
+  display: block;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.smm-description__button .arrow:after{
+  content: url("data:image/svg+xml; utf8, <svg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M2.92852 -0.000281409L2.92847 7.85668M2.92847 7.85668L5.09557 5.09063M2.92847 7.85668L0.731934 5.09063' stroke='white' stroke-opacity='0.5' stroke-width='0.5' /></svg>");
+  -webkit-transition: all 0.27s ease-in-out;
+  -o-transition: all 0.27s ease-in-out;
+  transition: all 0.27s ease-in-out;
+
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+}
+.smm-description__button[data-show="hide"] .arrow:after{
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
 .text-list {
   display: flex;
   justify-content: space-between;
@@ -1019,12 +1059,16 @@
   }
   .promo-section_wrapper {
     flex-direction: column-reverse;
+
   }
   .smm-description_info {
     text-align: left;
   }
 }
 @media screen and (max-width: 800px) {
+  .smm-description{
+    text-align: left;
+  }
   .promo-content h2 {
     width: 100%;
   }
