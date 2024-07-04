@@ -52,8 +52,61 @@ $('.select').each(function() {
         }
     });
 });
-    $('[name="tel-564"]').mask("+38X 00 000 00 00", {
-        placeholder: "+380  __  ___  __  __",
-        clearIfNotMatch: true,
-        translation: {X: {pattern: /0/, optional: false, fallback: '0'}}
-    })
+$('[name="tel-564"], [name="tel-565"]').mask("+38X 00 000 00 00", {
+  placeholder: "+380  __  ___  __  __",
+  clearIfNotMatch: true,
+  translation: {X: {pattern: /0/, optional: false, fallback: '0'}}
+});
+    document.addEventListener('DOMContentLoaded', function () {
+        const fieldsets = document.querySelectorAll('fieldset');
+        const nextButtons = document.querySelectorAll('.next-button');
+
+        nextButtons.forEach((button, index) => {
+          const currentFieldset = fieldsets[index];
+          const inputsInFieldset = currentFieldset.querySelectorAll('input, select, textarea');
+
+          button.disabled = true; // Спочатку кнопка неактивна
+
+          const checkButtonShow = () => {
+            // Перевіряємо, чи всі поля заповнені
+            const allInputsFilled = Array.from(inputsInFieldset).every((input) => input.value.trim() !== '');
+            button.disabled = !allInputsFilled; // Активуємо кнопку, якщо всі поля заповнені
+          };
+
+          inputsInFieldset.forEach((input) => {
+            input.addEventListener('input', () => {
+              checkButtonShow();
+            });
+          });
+          currentFieldset.addEventListener('click', (e) => {
+            const target = e.target;
+            if (target.tagName === 'LI') {
+              checkButtonShow();
+            }
+          });
+          button.addEventListener('click', function () {
+            addActiveStep.call(this);
+            // add
+            fieldsets[index].style.display = 'none';
+            fieldsets[index + 1].style.display = 'block';
+
+            // Перевіряємо кнопку наступного блоку
+            if (fieldsets[index + 1]) {
+              const nextButton = fieldsets[index + 1].querySelector('.next-button');
+              if (nextButton) {
+                nextButton.disabled = true; // Робимо наступну кнопку неактивною
+              }
+            }
+          });
+        });
+      });
+
+      function addActiveStep() {
+        if (window.innerWidth > 768) {
+          const previousActive = document.querySelector('.step.active');
+          previousActive.classList.remove('active');
+        }
+        const stepName = this.dataset.step;
+        const stepItem = document.getElementById(stepName).closest('.step');
+        stepItem.classList.add('active');
+      }

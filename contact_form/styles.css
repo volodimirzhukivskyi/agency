@@ -1,0 +1,8 @@
+fieldset {
+    display: none;
+    border: none;
+  }
+
+  fieldset:first-of-type {
+    display: block;
+  }

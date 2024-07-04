@@ -183,6 +183,198 @@
             </div>
         </section>
         <!-- preview block  -->
+        <!-- calculator -->
+        <div class="container calculate_wrapper" id="price_calculator">
+            <h1 class="title">Calculate the price</h1>
+
+            <ul class="stepper">
+                <li id="Shipping From" class="step active">
+                    <span class="text">Shipping From</span>
+                </li>
+                <li id="Vehicle" class="step ">
+                    <span class="text">Vehicle</span>
+                </li>
+                <li id="Move Date" class="step">
+                    <span class="text">Move Date</span>
+                </li>
+                <li id="Shipping To" class="step">
+                    <span class="text">Shipping To</span>
+                </li>
+                <li id="Contact" class="step">
+                    <span class="text">Contact</span>
+                </li>
+
+            </ul>
+            <div class="calculate_form">
+                <fieldset class="goal-selection-block">
+                    <legend>Почнімо з вашої цілі</legend>
+                    <div class="goal-options">
+
+                        <input id="goal_1" type="checkbox" name="goal">
+                        <label for="goal_1" class="goal-option">
+                            <span class="checkbox-custom">
+                                <img src="https://picsum.photos/536/354" alt="Targeted ads image"> </span>
+                            <p>Потрібне налаштування таргетованої реклами, яка збільшить кількість клієнтів на 50-350%
+                            </p>
+                        </label>
+
+
+                        <input id="goal_2" type="checkbox" name="goal">
+                        <label for="goal_2" class="goal-option">
+                        <span class="checkbox-custom">
+                            <img src="https://picsum.photos/536/354" alt="Social media promotion image">
+                        </span>
+                        <p>Потрібне просування й оформлення в соцмережах, SMM, щоб у них хотілося купувати!</p>
+                        </label>
+
+
+                        <input id="goal_3" type="checkbox" name="goal">
+                        <label for="goal_3" class="goal-option">
+                            <span class="checkbox-custom">
+                                <img src="https://picsum.photos/536/354" alt="Landing page image"> </span>
+                            <p>Потрібен конверсійний сайт / лендинг, який збільшить кількість продажів</p>
+                        </label>
+                        <input id="goal_4" type="checkbox" name="goal">
+                        <label for="goal_4" class="goal-option">
+                            <span class="checkbox-custom">
+                                <img src="https://picsum.photos/536/354" alt="Sales increase image"> </span>
+                            <p>Байдуже, головне — заявки та збільшення кількості продажів.</p>
+                        </label>
+                    </div>
+                    <button type="button" data-step="Vehicle" class="get-started-button next-button button">Далі <span
+                            class="arrow_right preview-button"></span></button>
+
+                </fieldset>
+
+                <fieldset class="businessDescription forms-style">
+                    <legend>Чим займається ваш бізнес?
+                        Це допоможе нам визначити, яке рішення вам необхідне.</legend>
+
+                    <label for="businessDescription">
+                        Чим займається ваш бізнес?
+                        <span class="wpcf7-form-control-wrap text-909">
+                            <input type="text" name="businessDescription" value="" size="40"
+                                class="wpcf7-form-control wpcf7-text" aria-invalid="false"
+                                placeholder="Впишіть сюди рід ваших занять" />
+                        </span>
+                    </label>
+                    <p>
+                        <span class="wpcf7-form-control-wrap checkbox-380">
+                            <span class="wpcf7-form-control wpcf7-acceptance" id="checkbox-380">
+                                <span class="wpcf7-list-item">
+                                    <input type="checkbox" id='checkbox-380_1' name="checkbox-380[]" value="1"
+                                        aria-invalid="false" />
+                                    <label for="checkbox-380_1">персональних даних</label>
+
+                                </span>
+                                <span class="wpcf7-list-item">
+                                    <input type="checkbox" id='checkbox-380_2' name="checkbox-380[]" value="1"
+                                        aria-invalid="false" />
+                                    <label for="checkbox-380_2">персональних даних</label>
+
+                                </span>
+                                <span class="wpcf7-list-item">
+                                    <input type="checkbox" id='checkbox-380_3' name="checkbox-380[]" value="1"
+                                        aria-invalid="false" />
+                                    <label for="checkbox-380_3">персональних даних</label>
+
+                                </span>
+                            </span>
+                        </span>
+                    </p>
+
+                    <button type="button" data-step="Vehicle" class=" next-button button">Далі <span
+                        class="arrow_right preview-button"></span></button>
+                </fieldset>
+                    <fieldset class="additional-services goal-selection-block">
+                        <legend>За необхідності виберіть додаткові послуги, і ми додамо їх у вартість.</legend>
+                        <div class="goal-options">
+
+                            <input id="goal_4" type="checkbox" name="goal">
+                            <label for="goal_4" class="goal-option">
+                                <span class="checkbox-custom">
+                                    <img src="https://picsum.photos/536/354" alt="Targeted ads image"> </span>
+                                <p>Потрібне налаштування таргетованої реклами, яка збільшить кількість клієнтів на 50-350%
+                                </p>
+                            </label>
+
+
+                            <input id="goal_5" type="checkbox" name="goal">
+                            <label for="goal_5" class="goal-option">
+                                <span class="checkbox-custom">
+                                    <img src="https://picsum.photos/536/354" alt="Social media promotion image">
+                                </span>
+                                <p>Потрібне просування й оформлення в соцмережах, SMM, щоб у них хотілося купувати!</p>
+                            </label>
+
+
+                            <input id="goal_6" type="checkbox" name="goal">
+                            <label for="goal_6" class="goal-option">
+                                <span class="checkbox-custom">
+                                    <img src="https://picsum.photos/536/354" alt="Landing page image"> </span>
+                                <p>Потрібен конверсійний сайт / лендинг, який збільшить кількість продажів</p>
+                            </label>
+
+                        </div>
+
+                        <button type="button" data-step="Vehicle" class=" next-button button">Далі <span
+                                class="arrow_right preview-button"></span></button>
+                    </fieldset>
+
+                <fieldset class="submit-page forms-style">
+                    <legend>Чудово, залишилася остання деталь!</legend>
+                    <p class="submit-page__text">Будемо чесні, після заповнення форми нижче, ми отримаємо вашу заявку і приступимо до підрахунку
+                        вартості проєкту, а також зв'яжемося з вами для БЕЗКОШТОВНОЇ консультації!</p>
+                    <div class="submit-page__content">
+                            <label for="nameInput">
+                                Як вас звати?
+                                <span class="wpcf7-form-control-wrap text-909">
+                                    <input type="text" name="nameInput" value="" size="40"
+                                        class="wpcf7-form-control wpcf7-text" aria-invalid="false"
+                                        placeholder="Введіть своє ім’я" />
+                                </span>
+                            </label>
+                            <label for="tel-564">
+                                Ваш номер:
+                                <span class="wpcf7-form-control-wrap tel-565 phone-input">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1024px-Flag_of_Ukraine.svg.png"
+                                        alt="Прапор України">
+                                    <input type="tel" name="tel-565" value="" size="40"
+                                        class="wpcf7-form-control wpcf7-tel" aria-invalid="false"
+                                        selectonfocus="true" />
+                                </span>
+                            </label>
+
+
+                        <div >
+                            <p>
+                                <span class="wpcf7-form-control-wrap checkbox-379">
+                                    <span class="wpcf7-form-control wpcf7-acceptance" id="checkbox-379">
+                                        <span class="wpcf7-list-item">
+                                            <input type="checkbox" id='acceptance-0' name="checkbox-379[]" value="1"
+                                                aria-invalid="false" />
+                                            <label for="acceptance-0"></label>
+                                            <span class="primary-text_wrapper">Ви погоджуєтесь на обробку <span
+                                                    class="primary">персональних даних</span></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </p>
+                            <input type="submit" value="Отримати безкоштовну консультацію"
+                                class="wpcf7-form-control wpcf7-submit" />
+                        </div>
+                    </div>
+
+
+                </fieldset>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- calculator -->
         <!-- cases -->
         <section class=" cases_section    container">
             <h2 class="work_title">Кейси</h2>
@@ -357,7 +549,8 @@
                                                 спонукали купити саме у
                                                 вас.</p>
                                         </div>
-                                        <button data-show="show" class="smm-description__button">розгорнути повністю <span class="arrow"></span></button>
+                                        <button data-show="show" class="smm-description__button">розгорнути повністю
+                                            <span class="arrow"></span></button>
                                     </article>
 
                                     <div class="promo-image">
@@ -625,97 +818,7 @@
         </div>
 
         <!-- step work  -->
-        <!-- <div class="progress-steps-container container">
-            <p class="step-by-step-guide-text-style"><span class="montserrat-heading">Н</span><span
-                    class="montserrat-heading montserrat-heading--small">АША РОБОТА </span><span
-                    class="stepwise-italic-heading">ПОКРОКОВО</span></p>
-            <div class="step-by-step-container">
-                <div class="marketing-process-container">
-                    <div class="section-with-numbered-list-items">
-                        <div class="circular-text-container1">
-                            <p class="number-label">01</p>
-                        </div>
-                    </div>
-                    <div class="consultation-request-section ">
-                        <p class="consultation-request-text"><span>Залишаєте </span><span
-                                class="marketing-message-style">заявку </span><span>на безплатну консультацію</span></p>
-                        <div class="consultation-request-container">
-                            <p class="application-form-heading">Залишити заявку</p>
 
-                            <span class="arrow_right preview-button"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-wrapper1">
-                    <div class="vertical-separator"></div>
-                </div>
-                <div class="targetologist-section3">
-                    <div class="targetologist-section2 div-style-f62:first-child">
-                        <div class="targetologist-section1" style="align-items: flex-start">
-                            <div class="targetologist-section" style="padding-bottom: 16px">
-                                <div class="circular-text-container">
-                                    <p class="step-info-card">02</p>
-                                </div>
-                            </div>
-                            <p class="targetologist-message"
-                                style="padding-top: 6px; max-width: 503px; box-sizing: border-box; flex-shrink: 0">
-                                <span>Наш таргетолог</span><span class="marketing-message-style"> зв&apos;язується з
-                                    вами</span><span> та дає повне розуміння, які результати ви можете отримати з
-                                    реклами.</span>
-                            </p>
-                        </div>
-                        <div class="content-wrapper">
-                            <div class="vertical-separator"></div>
-                        </div>
-                    </div>
-                    <div class="targetologist-section2">
-                        <div class="targetologist-section1"
-                            style="align-items: center; width: 100%; box-sizing: border-box">
-                            <div class="targetologist-section"
-                                style="border-radius: 500px; border: 0.8px solid white; box-sizing: border-box; padding-left: 12px; padding-right: 12px; display: flex; justify-content: center; align-items: stretch; flex-direction: column; height: 56px">
-                                <p class="step-info-card">03</p>
-                            </div>
-                            <p class="targetologist-message" style="flex-shrink: 1"><span
-                                    class="marketing-message-style">+БОНУС Проаналізуємо конкурентів</span><span> і
-                                    покажемо, як вони запускають рекламу</span></p>
-                        </div>
-                        <div class="content-wrapper">
-                            <div class="vertical-separator"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="progress-step-section">
-                    <div class="circular-text-container2">
-                        <p class="number-block">04</p>
-                    </div>
-                    <p class="standout-text-block"><span class="montserrat-text">За 7 днів ми </span><span>запускаємо
-                            рекламу </span><span class="montserrat-text">і вже в перші дні отримуєте звернення та
-                            клієнтів!</span></p>
-                </div>
-                <div class="horizontal-divider">
-                    <div class="vertical-separator"></div>
-                </div>
-                <div class="flex-row-with-margin">
-                    <div class="circular-text-box">
-                        <p class="number-block">05</p>
-                    </div>
-                    <p class="content-block"><span>Далі ми </span><span class="marketing-message-style">оптимізовуємо
-                            рекламу</span><span> для досягнення ще кращих результатів</span></p>
-                </div>
-                <div class="horizontal-divider">
-                    <div class="vertical-separator"></div>
-                </div>
-                <div class="flex-row-with-margin">
-                    <div class="circle-container">
-                        <p class="number-block">06</p>
-                    </div>
-                    <p class="content-block">
-                        <span class="marketing-message-style">Продовжуємо нашу співпрацю </span><span>від місяця до
-                            місяця, тим самим виводячи Ваш бізнес на новий рівень!<br /></span>
-                    </p>
-                </div>
-            </div>
-        </div> -->
         <section class="container steps-block">
 
             <h2 class="steps-block__title ">Н<span>АША РОБОТА</span>
@@ -763,17 +866,17 @@
         <!-- </div> -->
         <!-- step work  -->
         <!-- maps -->
-            <section     class="container maps">
-                <h2 class="global-banner-text-style">
-                    <span class="global-heading-style global-heading-style global-accent-text-style">Н</span><span
-                        class="global-heading-style global-heading-style global-accent-text-style">ам довіряють
-                        <br />бізнеси по </span><span
-                        class="global-heading-style global-heading-style global-accent-text-style">всьому світу</span>
-                </h2>
-                <div class="maps_wrapper">
-                    <img src="./assets/maps/maps.png" alt="">
-                </div>
-            </section>
+        <section class="container maps">
+            <h2 class="global-banner-text-style">
+                <span class="global-heading-style global-heading-style global-accent-text-style">Н</span><span
+                    class="global-heading-style global-heading-style global-accent-text-style">ам довіряють
+                    <br />бізнеси по </span><span
+                    class="global-heading-style global-heading-style global-accent-text-style">всьому світу</span>
+            </h2>
+            <div class="maps_wrapper">
+                <img src="./assets/maps/maps.png" alt="">
+            </div>
+        </section>
 
 
 
@@ -781,117 +884,132 @@
         <!-- maps -->
         <!-- 4 поширені проблеми під час вибору  -->
         <!-- contact form  -->
-<section class="contact-form container">
-    <h2 class="contact-form__title">З<span>АЛИШТЕ ЗАЯВКУ ТА ОТРИМАЙТЕ БЕЗкоштовну  ПЕРСОНАЛЬНУ КОНСУЛЬТАЦІЮ В ЗРУЧНИЙ ДЛЯ ВАС ЧАС</span></h2>
-    <div class="wpcf7" id="contact-form" lang="uk" dir="ltr">
-        <div class="screen-reader-response"></div>
-        <form action="" method="post" class="wpcf7-form" novalidate="novalidate">
-            <div style="display: none;">
-                <input type="hidden" name="_wpcf7" value="12345" />
-                <input type="hidden" name="_wpcf7_version" value="5.7.8" />
-                <input type="hidden" name="_wpcf7_locale" value="uk" />
-                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f12345-p67890-o1" />
-                <input type="hidden" name="_wpcf7_container_post" value="0" />
-                <input type="hidden" name="_wpcf7_nonce" value="abcdefg123456" />
+        <section class="contact-form container">
+            <h2 class="contact-form__title">З<span>АЛИШТЕ ЗАЯВКУ ТА ОТРИМАЙТЕ БЕЗкоштовну ПЕРСОНАЛЬНУ КОНСУЛЬТАЦІЮ В
+                    ЗРУЧНИЙ ДЛЯ ВАС ЧАС</span></h2>
+            <div class="wpcf7 forms-style" id="contact-form" lang="uk" dir="ltr">
+                <div class="screen-reader-response"></div>
+                <form action="" method="post" class="wpcf7-form" novalidate="novalidate">
+                    <div style="display: none;">
+                        <input type="hidden" name="_wpcf7" value="12345" />
+                        <input type="hidden" name="_wpcf7_version" value="5.7.8" />
+                        <input type="hidden" name="_wpcf7_locale" value="uk" />
+                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f12345-p67890-o1" />
+                        <input type="hidden" name="_wpcf7_container_post" value="0" />
+                        <input type="hidden" name="_wpcf7_nonce" value="abcdefg123456" />
+                    </div>
+
+                    <p>
+                        <label for="menu-606">
+                            Вам потрібно:
+                            <span class="wpcf7-form-control-wrap menu-606">
+                                <select name="menu-606" class="select wpcf7-form-control wpcf7-select"
+                                    aria-invalid="false">
+                                    <option disabled>Выбрать</option>
+                                    <option value="Налаштування таргетованої реклами">Налаштування таргетованої реклами
+                                    </option>
+                                    <option value="Інша послуга">Інша послуга</option>
+                                </select>
+                            </span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="text-909">
+                            Чим займається ваш бізнес?
+                            <span class="wpcf7-form-control-wrap text-909">
+                                <input type="text" name="text-909" value="" size="40"
+                                    class="wpcf7-form-control wpcf7-text" aria-invalid="false"
+                                    placeholder="Приклад: Виготовлення меблів" />
+                            </span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="tel-564">
+                            Ваш номер:
+                            <span class="wpcf7-form-control-wrap tel-564 phone-input">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1024px-Flag_of_Ukraine.svg.png"
+                                    alt="Прапор України">
+                                <input type="tel" name="tel-564" value="" size="40" class="wpcf7-form-control wpcf7-tel"
+                                    aria-invalid="false" selectonfocus="true" />
+                            </span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label class="last-main-input" for="text-584">
+                            Зручний для дзвінка час:
+                            <span class="wpcf7-form-control-wrap text-584">
+                                <input type="text" name="text-584" value="" size="40"
+                                    class="wpcf7-form-control wpcf7-text" aria-invalid="false"
+                                    placeholder="Приклад: 11:00 - 15:00" />
+                            </span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="checkbox-878">
+                            У якому месенджері зручно спілкуватися?
+                            <span class="wpcf7-form-control-wrap checkbox-878">
+                                <span class="wpcf7-form-control wpcf7-checkbox socials" id="checkbox-878">
+                                    <span class="wpcf7-list-item first">
+                                        <input id="checkbox-878-0" type="checkbox" name="checkbox-878[]"
+                                            value="Telegram" />
+
+                                        <label for="checkbox-878-0"><svg width="24" height="23" viewBox="0 0 24 23"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23.5543 2.03549L19.3992 19.5374C19.2037 20.3617 18.2993 20.7863 17.5579 20.395L12.3029 17.6223L9.81793 21.7772C9.1417 22.9095 7.43076 22.4183 7.43076 21.0944V16.465C7.43076 16.1069 7.57741 15.7656 7.82998 15.5158L18.0712 5.52421C18.063 5.39931 17.9327 5.29107 17.8023 5.38266L5.58131 14.0753L1.47505 11.9105C0.513667 11.4026 0.554404 9.97878 1.54838 9.53749L21.7945 0.520099C22.764 0.0871315 23.8069 0.978046 23.5543 2.03549Z"
+                                                    fill="white" />
+                                            </svg></label>
+                                    </span>
+                                    <span class="wpcf7-list-item">
+                                        <input type="checkbox" id="checkbox-878-1" name="checkbox-878[]"
+                                            value="Instagram" />
+                                        <label for="checkbox-878-1"><svg width="24" height="24" viewBox="0 0 24 24"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M0.592529 6.891C0.592529 3.41763 3.41836 0.591797 6.89174 0.591797H17.1082C20.5816 0.591797 23.4073 3.41763 23.4073 6.891V17.1075C23.4073 20.5809 20.5816 23.4066 17.1082 23.4066H6.89174C3.41836 23.4066 0.592529 20.5809 0.592529 17.1075V6.891ZM7.47022 11.9992C7.47022 14.4969 9.50226 16.5289 11.9999 16.5289C14.4976 16.5289 16.5297 14.4969 16.5297 11.9992C16.5297 9.50152 14.4976 7.46949 11.9999 7.46949C9.50226 7.46949 7.47022 9.50152 7.47022 11.9992ZM6.00205 11.9992C6.00205 8.6919 8.69263 6.00132 11.9999 6.00132C15.3072 6.00132 17.9978 8.6919 17.9978 11.9992C17.9978 15.3065 15.3072 17.9971 11.9999 17.9971C8.69263 17.9971 6.00205 15.3065 6.00205 11.9992ZM19.3062 3.01123C20.1757 3.01123 20.8804 3.71606 20.8804 4.58552C20.8804 5.455 20.1757 6.15984 19.3062 6.15984C18.4367 6.15984 17.7318 5.455 17.7318 4.58552C17.7318 3.71606 18.4367 3.01123 19.3062 3.01123Z"
+                                                    fill="white"></path>
+                                            </svg></label>
+                                    </span>
+                                    <span class="wpcf7-list-item last">
+                                        <input type="checkbox" id="checkbox-878-2" name="checkbox-878[]"
+                                            value="Viber" />
+                                        <label for="checkbox-878-2"><svg width="25" height="25" viewBox="0 0 25 25"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.4073 0.962891C5.89443 0.962891 0.592529 6.26479 0.592529 12.7777C0.592529 15.0176 1.22758 17.2033 2.42383 19.0937C2.50259 19.2168 2.52228 19.3743 2.47798 19.5121L0.85344 24.3759L6.16518 22.9778C6.20457 22.968 6.24887 22.9631 6.29318 22.9631C6.37687 22.9631 6.46055 22.9877 6.5344 23.0271C8.31646 24.051 10.3496 24.5925 12.4073 24.5925C18.9203 24.5925 24.2222 19.2906 24.2222 12.7777C24.2222 6.26479 18.9203 0.962891 12.4073 0.962891ZM19.9344 20.0783C19.8901 20.1472 19.831 20.2013 19.7621 20.2407C19.2796 20.5213 18.6938 20.6592 18.0292 20.6592C16.9167 20.6592 15.5777 20.2703 14.1008 19.5023C12.4763 18.6605 10.8123 17.4101 9.29119 15.8939C7.77495 14.3727 6.52455 12.7088 5.68275 11.0842C4.46188 8.73113 4.19605 6.72261 4.94432 5.42298C4.9837 5.35406 5.03785 5.29499 5.10677 5.25068C5.56952 4.96024 7.63219 4.74363 8.3017 5.05869C8.43461 5.12761 8.53799 5.25068 8.56753 5.39345C8.79398 6.37309 9.27642 7.49058 9.97546 8.62775C10.0493 8.75082 10.069 8.89851 10.0247 9.03635C9.8967 9.4351 9.31088 10.1784 8.86782 10.6264C9.57671 11.6898 10.4579 12.7629 11.4425 13.7426C12.4221 14.7271 13.4953 15.6083 14.5586 16.3172C15.0066 15.8742 15.75 15.2884 16.1487 15.1604C16.2865 15.1161 16.4342 15.1357 16.5573 15.2096C17.6945 15.9086 18.812 16.3911 19.7916 16.6175C19.9344 16.6471 20.0574 16.7504 20.1264 16.8834C20.4414 17.5529 20.2248 19.6155 19.9344 20.0783Z"
+                                                    fill="white"></path>
+                                            </svg></label>
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <span class="wpcf7-form-control-wrap checkbox-379">
+                            <span class="wpcf7-form-control wpcf7-acceptance" id="checkbox-379">
+                                <span class="wpcf7-list-item">
+                                    <input type="checkbox" id='acceptance-0' name="checkbox-379[]" value="1"
+                                        aria-invalid="false" />
+                                    <label for="acceptance-0"></label>
+                                    <span class="primary-text_wrapper">Ви погоджуєтесь на обробку <span
+                                            class="primary">персональних даних</span></span>
+                                </span>
+                            </span>
+                        </span>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Отримати безкоштовну консультацію"
+                            class="wpcf7-form-control wpcf7-submit" />
+                    </p>
+                </form>
             </div>
-
-            <p>
-                <label for="menu-606">
-                    Вам потрібно:
-                    <span class="wpcf7-form-control-wrap menu-606">
-                        <select name="menu-606" class="select wpcf7-form-control wpcf7-select" aria-invalid="false">
-                            <option disabled>Выбрать</option>
-                            <option value="Налаштування таргетованої реклами">Налаштування таргетованої реклами</option>
-                            <option value="Інша послуга">Інша послуга</option>
-                        </select>
-                    </span>
-                </label>
-            </p>
-
-            <p>
-                <label for="text-909">
-                    Чим займається ваш бізнес?
-                    <span class="wpcf7-form-control-wrap text-909">
-                        <input type="text" name="text-909" value="" size="40" class="wpcf7-form-control wpcf7-text"
-                            aria-invalid="false" placeholder="Приклад: Виготовлення меблів" />
-                    </span>
-                </label>
-            </p>
-
-            <p>
-                <label for="tel-564">
-                    Ваш номер:
-                    <span class="wpcf7-form-control-wrap tel-564">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1024px-Flag_of_Ukraine.svg.png" alt="Прапор України">
-                        <input type="tel" name="tel-564"  value="" size="40" class="wpcf7-form-control wpcf7-tel"
-                            aria-invalid="false"  selectonfocus="true" />
-                    </span>
-                </label>
-            </p>
-
-            <p>
-                <label class="last-main-input" for="text-584">
-                    Зручний для дзвінка час:
-                    <span class="wpcf7-form-control-wrap text-584">
-                        <input type="text" name="text-584" value="" size="40" class="wpcf7-form-control wpcf7-text"
-                            aria-invalid="false" placeholder="Приклад: 11:00 - 15:00" />
-                    </span>
-                </label>
-            </p>
-
-            <p>
-                <label for="checkbox-878">
-                    У якому месенджері зручно спілкуватися?
-                    <span class="wpcf7-form-control-wrap checkbox-878">
-                        <span class="wpcf7-form-control wpcf7-checkbox socials" id="checkbox-878">
-                            <span class="wpcf7-list-item first">
-                                <input id="checkbox-878-0" type="checkbox" name="checkbox-878[]" value="Telegram" />
-
-                                <label for="checkbox-878-0"><svg width="24" height="23" viewBox="0 0 24 23"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M23.5543 2.03549L19.3992 19.5374C19.2037 20.3617 18.2993 20.7863 17.5579 20.395L12.3029 17.6223L9.81793 21.7772C9.1417 22.9095 7.43076 22.4183 7.43076 21.0944V16.465C7.43076 16.1069 7.57741 15.7656 7.82998 15.5158L18.0712 5.52421C18.063 5.39931 17.9327 5.29107 17.8023 5.38266L5.58131 14.0753L1.47505 11.9105C0.513667 11.4026 0.554404 9.97878 1.54838 9.53749L21.7945 0.520099C22.764 0.0871315 23.8069 0.978046 23.5543 2.03549Z"
-                                        fill="white" />
-                                </svg></label>
-                            </span>
-                            <span class="wpcf7-list-item">
-                                <input type="checkbox" id="checkbox-878-1" name="checkbox-878[]" value="Instagram" />
-                                <label for="checkbox-878-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.592529 6.891C0.592529 3.41763 3.41836 0.591797 6.89174 0.591797H17.1082C20.5816 0.591797 23.4073 3.41763 23.4073 6.891V17.1075C23.4073 20.5809 20.5816 23.4066 17.1082 23.4066H6.89174C3.41836 23.4066 0.592529 20.5809 0.592529 17.1075V6.891ZM7.47022 11.9992C7.47022 14.4969 9.50226 16.5289 11.9999 16.5289C14.4976 16.5289 16.5297 14.4969 16.5297 11.9992C16.5297 9.50152 14.4976 7.46949 11.9999 7.46949C9.50226 7.46949 7.47022 9.50152 7.47022 11.9992ZM6.00205 11.9992C6.00205 8.6919 8.69263 6.00132 11.9999 6.00132C15.3072 6.00132 17.9978 8.6919 17.9978 11.9992C17.9978 15.3065 15.3072 17.9971 11.9999 17.9971C8.69263 17.9971 6.00205 15.3065 6.00205 11.9992ZM19.3062 3.01123C20.1757 3.01123 20.8804 3.71606 20.8804 4.58552C20.8804 5.455 20.1757 6.15984 19.3062 6.15984C18.4367 6.15984 17.7318 5.455 17.7318 4.58552C17.7318 3.71606 18.4367 3.01123 19.3062 3.01123Z" fill="white"></path>
-                                </svg></label>
-                            </span>
-                            <span class="wpcf7-list-item last">
-                                <input type="checkbox" id="checkbox-878-2" name="checkbox-878[]" value="Viber" />
-                                <label for="checkbox-878-2"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.4073 0.962891C5.89443 0.962891 0.592529 6.26479 0.592529 12.7777C0.592529 15.0176 1.22758 17.2033 2.42383 19.0937C2.50259 19.2168 2.52228 19.3743 2.47798 19.5121L0.85344 24.3759L6.16518 22.9778C6.20457 22.968 6.24887 22.9631 6.29318 22.9631C6.37687 22.9631 6.46055 22.9877 6.5344 23.0271C8.31646 24.051 10.3496 24.5925 12.4073 24.5925C18.9203 24.5925 24.2222 19.2906 24.2222 12.7777C24.2222 6.26479 18.9203 0.962891 12.4073 0.962891ZM19.9344 20.0783C19.8901 20.1472 19.831 20.2013 19.7621 20.2407C19.2796 20.5213 18.6938 20.6592 18.0292 20.6592C16.9167 20.6592 15.5777 20.2703 14.1008 19.5023C12.4763 18.6605 10.8123 17.4101 9.29119 15.8939C7.77495 14.3727 6.52455 12.7088 5.68275 11.0842C4.46188 8.73113 4.19605 6.72261 4.94432 5.42298C4.9837 5.35406 5.03785 5.29499 5.10677 5.25068C5.56952 4.96024 7.63219 4.74363 8.3017 5.05869C8.43461 5.12761 8.53799 5.25068 8.56753 5.39345C8.79398 6.37309 9.27642 7.49058 9.97546 8.62775C10.0493 8.75082 10.069 8.89851 10.0247 9.03635C9.8967 9.4351 9.31088 10.1784 8.86782 10.6264C9.57671 11.6898 10.4579 12.7629 11.4425 13.7426C12.4221 14.7271 13.4953 15.6083 14.5586 16.3172C15.0066 15.8742 15.75 15.2884 16.1487 15.1604C16.2865 15.1161 16.4342 15.1357 16.5573 15.2096C17.6945 15.9086 18.812 16.3911 19.7916 16.6175C19.9344 16.6471 20.0574 16.7504 20.1264 16.8834C20.4414 17.5529 20.2248 19.6155 19.9344 20.0783Z" fill="white"></path>
-                                </svg></label>
-                            </span>
-                        </span>
-                    </span>
-                </label>
-            </p>
-
-            <p>
-                <span class="wpcf7-form-control-wrap checkbox-379">
-                    <span class="wpcf7-form-control wpcf7-acceptance" id="checkbox-379">
-                        <span class="wpcf7-list-item">
-                            <input type="checkbox" id='acceptance-0' name="checkbox-379[]" value="1"
-                                aria-invalid="false" />
-                            <label for="acceptance-0"></label>
-                            <span class="primary-text_wrapper">Ви погоджуєтесь на обробку <span
-                                    class="primary">персональних даних</span></span>
-                        </span>
-                    </span>
-                </span>
-            </p>
-
-            <p>
-                <input type="submit" value="Отримати безкоштовну консультацію"
-                    class="wpcf7-form-control wpcf7-submit" />
-            </p>
-        </form>
-    </div>
-</section>
+        </section>
 
         <!-- contact form  -->
     </main>

@@ -1878,24 +1878,24 @@
   font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
 }
 
-.wpcf7 p {
+.forms-style p {
   margin: 0;
 }
-.wpcf7-form {
+.forms-style-form {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-.wpcf7 div.wpcf7-response-output {
+.forms-style div.wpcf7-response-output {
   padding: 15px;
   border-radius: 5px;
 }
 
 /* Стилі для полів введення */
-.wpcf7 input[type='text'],
-.wpcf7 input[type='tel'],
-.wpcf7 textarea,
-.wpcf7 select,
+.forms-style input[type='text'],
+.forms-style input[type='tel'],
+.forms-style textarea,
+.forms-style select,
 .new-select {
   box-sizing: border-box;
   width: 100%;
@@ -1909,7 +1909,7 @@
 }
 
 /* Стилі для міток */
-.wpcf7 label {
+.forms-style label {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1920,12 +1920,13 @@
 }
 
 /* Стилі для чекбоксів */
-.wpcf7 input[type='checkbox'] {
+.forms-style input[type='checkbox'] {
   margin-right: 10px;
 }
 
 /* Стилі для кнопки */
-.wpcf7 input[type='submit'] {
+.forms-style input[type='submit'] {
+  display: block;
   box-sizing: border-box;
   width: 100%;
   border: 1px solid #fff;
@@ -1939,20 +1940,20 @@
   transition: background-color 0.3s ease; /* Плавний перехід кольору */
 }
 
-.wpcf7 input[type='submit']:hover {
+.forms-style input[type='submit']:hover {
   background-color: #b42358;
   border: 1px solid transparent;
 }
 
 /* Стилі для placeholder */
-.wpcf7 input::placeholder,
-.wpcf7 textarea::placeholder {
+.forms-style input::placeholder,
+.forms-style textarea::placeholder {
   font-weight: 400;
   font-size: clamp(12px, 3.5vw, 18px);
   letter-spacing: -0.04em;
   color: rgba(255, 255, 255, 0.38);
 }
-.wpcf7 input[type='tel']::placeholder {
+.forms-style input[type='tel']::placeholder {
   color: white;
 }
 
@@ -2145,10 +2146,15 @@
   transform: rotate(180deg);
 }
 /* phone mask*/
-.wpcf7-form-control-wrap.tel-564 {
+.wpcf7-form{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.wpcf7-form-control-wrap.phone-input {
   position: relative;
 }
-.wpcf7-form-control-wrap.tel-564 img {
+.wpcf7-form-control-wrap.phone-input img {
   width: 17px;
   position: absolute;
   top: 0;
@@ -2156,7 +2162,7 @@
   bottom: 0;
   margin: auto;
 }
-.wpcf7-form-control-wrap.tel-564 input {
+.wpcf7-form-control-wrap.phone-input input {
   padding-left: 44px;
 }
 @media screen and (max-width: 360px) {
@@ -2171,7 +2177,7 @@
     }
   }
 
-  .wpcf7 input[type='submit'] {
+  .forms-style input[type='submit'] {
     font-size: 10px;
   }
 }
@@ -2180,10 +2186,10 @@
   .wpcf7 {
     padding: 40px;
   }
-  .wpcf7 label {
+  .forms-style label {
     gap: 13px;
   }
-  .wpcf7 input[type='submit'] {
+  .forms-style input[type='submit'] {
     padding: 20px;
   }
 }
@@ -2206,11 +2212,140 @@
     gap: 5px;
   }
 }
-@media screen and (min-width:1330px) {
-  .footer::after{
-    width:70%;
+@media screen and (min-width: 1330px) {
+  .footer::after {
+    width: 70%;
     margin: auto;
   }
-
 }
 /* contact form  */
+/* contact form calculate */
+.calculate_form {
+  min-height: 600px;
+  position: relative;
+}
+.calculate_form fieldset {
+  display: none;
+  border: none;
+  padding: 32px 0 70px;
+  position: relative;
+}
+
+.calculate_form fieldset:first-of-type {
+  display: block;
+}
+.calculate_form fieldset > button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  border: none;
+}
+.calculate_form legend {
+  max-width: 696px;
+  font-weight: 500;
+  font-size: 30px;
+  color: #fff;
+}
+.calculate_form .goal-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 19px;
+}
+.calculate_form label {
+  position: relative;
+}
+.goal-selection-block label::before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  border-radius: 20px;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.goal-selection-block input:checked + label::before {
+  content: '';
+  box-shadow: rgba(180, 35, 88, 0.73) 0px 22px 70px 4px;
+
+}
+.calculate_form .goal-option {
+  cursor: pointer;
+  border: 0.8px solid #fff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 15px;
+}
+.calculate_form .goal-option:hover {
+  border: 0.8px solid rgba(180, 35, 88, 0.73);
+}
+
+.calculate_form  input {
+  display: none;
+}
+.calculate_form .goal-option p {
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #fff;
+}
+.calculate_form .goal-option img {
+  max-width: 100%;
+}
+.calculate_form fieldset>legend{
+  margin-bottom: 32px;
+}
+@media screen and (max-width:1000px){
+  .calculate_form .goal-options{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+/* fieldest 2  */
+.calculate_form [type="text"]{
+display: block;
+}
+.businessDescription .wpcf7-list-item>label{
+  flex-direction: row;
+  gap: 0;
+}
+.businessDescription .wpcf7-form-control{
+  display: flex;
+  gap: 35px;
+}
+.businessDescription .wpcf7-acceptance label:before{
+  margin-right: 7px;
+}
+.businessDescription label {
+  gap: 44px;
+  margin-bottom: 47px;
+}
+[name="businessDescription"]{
+  max-width: 500px;
+}
+/* FILDSET 4 */
+.submit-page [type='tel']{
+display: block;
+}
+.submit-page [type='submit']{
+margin-top: 14px;
+}
+.submit-page__content{
+display: grid;
+gap: 41px;
+grid-template-columns: repeat(2,1fr);
+}
+.forms-style .submit-page__text{
+  font-weight: 400;
+font-size: 18px;
+line-height: 122%;
+color: #fff;
+margin-bottom: 37px;
+max-width: 694px;
+}
+
+/* contact form calculate */
