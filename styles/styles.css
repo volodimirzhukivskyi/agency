@@ -28,11 +28,11 @@
   border: none;
   color: white;
   cursor: pointer;
-  transition:all 0.5s;
+  transition: all 0.5s;
 }
 .menu-btn:hover {
   text-decoration: none;
-  transition:all 0.5s;
+  transition: all 0.5s;
 }
 /* burger menu */
 .menu {
@@ -807,7 +807,10 @@
 /* promo section  */
 
 .promo-section {
-  color: white;
+  background-image: url(../assets/promo_section/background_gradient.svg);
+  background-position: bottom -58% right -79%;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
 }
 .promo-section_wrapper {
   display: flex;
@@ -875,9 +878,7 @@
 .steps_slider {
   max-width: 1352px !important;
   width: 100%;
-  background-image: url(../assets/promo_section/background_gradient.svg);
-  background-position: 130% 1519%;
-  background-repeat: no-repeat;
+
   padding: 50px 0;
 }
 .steps_slider .swiper-slide {
@@ -901,10 +902,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
+  border: 0.8px solid white;
   border-radius: 50%;
   font-weight: 500;
-  font-size: clamp(15px, 5vw, 24px);
+  font-size: clamp(15px, 4vw, 24px);
   text-align: center;
   color: #fff;
 }
@@ -1004,14 +1005,11 @@
   /* Стилі для четвертого рядка "ЗАРОБЛЯТИ БІЛЬШЕ?" */
   text-transform: lowercase;
 }
-@media screen and (max-width: 1300px) {
-  .steps_slider {
-    background-position: 210% 319%;
-  }
-}
+
 @media screen and (max-width: 1050px) {
-  .steps_slider {
-    background-position: 100% 100%;
+  .promo-section {
+    background-position: bottom center;
+    background-size: 95% 80%;
   }
   .promo-content_info {
     flex-direction: column;
@@ -1034,11 +1032,12 @@
   .promo-content h2 {
     width: 100%;
   }
-  .steps_slider {
-    background-position: 50% 100%;
-  }
 }
 @media screen and (max-width: 600px) {
+  .promo-section {
+    background-position: bottom center;
+    background-size: 140% 80%;
+  }
   .steps {
     column-gap: 0;
   }
@@ -1217,12 +1216,11 @@
     gap: 0;
   }
   .list {
-
     background-image: url('../assets/7_options/background_long.svg');
     background-position: center center;
     background-size: 100% 100%;
   }
-  .list-item{
+  .list-item {
     padding: 0;
   }
   .list-item p {
@@ -1631,10 +1629,8 @@
   }
 }
 
-
-
 @media screen and (max-width: 550px) {
-  .footer{
+  .footer {
     padding: 23px 10px;
   }
   .footer_info {
@@ -1714,11 +1710,10 @@
   min-width: 352px;
   min-height: 107px;
   border: 1px solid white;
-  background:transparent;
+  background: transparent;
   transition: all 0.5s;
-
 }
-.info-banner_button:hover{
+.info-banner_button:hover {
   box-shadow: 0 0 19px 0 rgba(180, 35, 88, 0.82);
   background: #b42358;
   transition: all 0.5s;
