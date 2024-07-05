@@ -184,194 +184,217 @@
         </section>
         <!-- preview block  -->
         <!-- calculator -->
-        <div class="container calculate_wrapper" id="price_calculator">
-            <h1 class="title">Calculate the price</h1>
+        <sectio class="calculator container">
+            <h2 class="work_title">Калькулятор <span>вартості проєкту</span></h2>
+            <p class="calculator__text">Дайте відповідь лише на 4 запитання, щоб отримати безкоштовнуконсультацію за
+                вашим проєктом і його
+                точну вартість</p>
 
-            <ul class="stepper">
-                <li id="Shipping From" class="step active">
-                    <span class="text">Shipping From</span>
-                </li>
-                <li id="Vehicle" class="step ">
-                    <span class="text">Vehicle</span>
-                </li>
-                <li id="Move Date" class="step">
-                    <span class="text">Move Date</span>
-                </li>
-                <li id="Shipping To" class="step">
-                    <span class="text">Shipping To</span>
-                </li>
-                <li id="Contact" class="step">
-                    <span class="text">Contact</span>
-                </li>
+            <div class="calculator_block container">
 
-            </ul>
-            <div class="calculate_form">
-                <fieldset class="goal-selection-block">
-                    <legend>Почнімо з вашої цілі</legend>
-                    <div class="goal-options">
+                <div class="calculate_wrapper" id="price_calculator">
+                    <ul class="swiper steps ">
+                        <li class="step active">
+                            <div class="step-number_wrapper"><span class="step-number">01</span></div>
+                        </li>
+                        <li  class="divider"></li>
+                        <li id="02" class="step">
+                            <div class="step-number_wrapper"><span class="step-number">02</span></div>
+                        </li>
+                        <li class="divider"></li>
+                        <li id="03" class="step  ">
+                            <div class="step-number_wrapper"><span class="step-number">03</span></div>
+                        </li>
+                        <li class="divider"></li>
+                        <li id="04" class="step  ">
+                            <div class="step-number_wrapper"><span class="step-number">04</span></div>
+                        </li>
+                    </ul>
+                    <div class="calculate_form">
+                        <fieldset class="goal-selection-block">
+                            <legend>Почнімо з вашої цілі</legend>
+                            <div class="goal-options">
 
-                        <input id="goal_1" type="checkbox" name="goal">
-                        <label for="goal_1" class="goal-option">
-                            <span class="checkbox-custom">
-                                <img src="https://picsum.photos/536/354" alt="Targeted ads image"> </span>
-                            <p>Потрібне налаштування таргетованої реклами, яка збільшить кількість клієнтів на 50-350%
-                            </p>
-                        </label>
-
-
-                        <input id="goal_2" type="checkbox" name="goal">
-                        <label for="goal_2" class="goal-option">
-                        <span class="checkbox-custom">
-                            <img src="https://picsum.photos/536/354" alt="Social media promotion image">
-                        </span>
-                        <p>Потрібне просування й оформлення в соцмережах, SMM, щоб у них хотілося купувати!</p>
-                        </label>
+                                <input id="goal_1" type="checkbox" name="goal">
+                                <label for="goal_1" class="goal-option">
+                                    <span class="checkbox-custom">
+                                        <img src="https://picsum.photos/536/354" alt="Targeted ads image"> </span>
+                                    <p>Потрібне налаштування таргетованої реклами, яка збільшить кількість клієнтів на
+                                        50-350%
+                                    </p>
+                                </label>
 
 
-                        <input id="goal_3" type="checkbox" name="goal">
-                        <label for="goal_3" class="goal-option">
-                            <span class="checkbox-custom">
-                                <img src="https://picsum.photos/536/354" alt="Landing page image"> </span>
-                            <p>Потрібен конверсійний сайт / лендинг, який збільшить кількість продажів</p>
-                        </label>
-                        <input id="goal_4" type="checkbox" name="goal">
-                        <label for="goal_4" class="goal-option">
-                            <span class="checkbox-custom">
-                                <img src="https://picsum.photos/536/354" alt="Sales increase image"> </span>
-                            <p>Байдуже, головне — заявки та збільшення кількості продажів.</p>
-                        </label>
-                    </div>
-                    <button type="button" data-step="Vehicle" class="get-started-button next-button button">Далі <span
-                            class="arrow_right preview-button"></span></button>
-
-                </fieldset>
-
-                <fieldset class="businessDescription forms-style">
-                    <legend>Чим займається ваш бізнес?
-                        Це допоможе нам визначити, яке рішення вам необхідне.</legend>
-
-                    <label for="businessDescription">
-                        Чим займається ваш бізнес?
-                        <span class="wpcf7-form-control-wrap text-909">
-                            <input type="text" name="businessDescription" value="" size="40"
-                                class="wpcf7-form-control wpcf7-text" aria-invalid="false"
-                                placeholder="Впишіть сюди рід ваших занять" />
-                        </span>
-                    </label>
-                    <p>
-                        <span class="wpcf7-form-control-wrap checkbox-380">
-                            <span class="wpcf7-form-control wpcf7-acceptance" id="checkbox-380">
-                                <span class="wpcf7-list-item">
-                                    <input type="checkbox" id='checkbox-380_1' name="checkbox-380[]" value="1"
-                                        aria-invalid="false" />
-                                    <label for="checkbox-380_1">персональних даних</label>
-
-                                </span>
-                                <span class="wpcf7-list-item">
-                                    <input type="checkbox" id='checkbox-380_2' name="checkbox-380[]" value="1"
-                                        aria-invalid="false" />
-                                    <label for="checkbox-380_2">персональних даних</label>
-
-                                </span>
-                                <span class="wpcf7-list-item">
-                                    <input type="checkbox" id='checkbox-380_3' name="checkbox-380[]" value="1"
-                                        aria-invalid="false" />
-                                    <label for="checkbox-380_3">персональних даних</label>
-
-                                </span>
-                            </span>
-                        </span>
-                    </p>
-
-                    <button type="button" data-step="Vehicle" class=" next-button button">Далі <span
-                        class="arrow_right preview-button"></span></button>
-                </fieldset>
-                    <fieldset class="additional-services goal-selection-block">
-                        <legend>За необхідності виберіть додаткові послуги, і ми додамо їх у вартість.</legend>
-                        <div class="goal-options">
-
-                            <input id="goal_4" type="checkbox" name="goal">
-                            <label for="goal_4" class="goal-option">
-                                <span class="checkbox-custom">
-                                    <img src="https://picsum.photos/536/354" alt="Targeted ads image"> </span>
-                                <p>Потрібне налаштування таргетованої реклами, яка збільшить кількість клієнтів на 50-350%
-                                </p>
-                            </label>
+                                <input id="goal_2" type="checkbox" name="goal">
+                                <label for="goal_2" class="goal-option">
+                                    <span class="checkbox-custom">
+                                        <img src="https://picsum.photos/536/354" alt="Social media promotion image">
+                                    </span>
+                                    <p>Потрібне просування й оформлення в соцмережах, SMM, щоб у них хотілося купувати!
+                                    </p>
+                                </label>
 
 
-                            <input id="goal_5" type="checkbox" name="goal">
-                            <label for="goal_5" class="goal-option">
-                                <span class="checkbox-custom">
-                                    <img src="https://picsum.photos/536/354" alt="Social media promotion image">
-                                </span>
-                                <p>Потрібне просування й оформлення в соцмережах, SMM, щоб у них хотілося купувати!</p>
-                            </label>
+                                <input id="goal_3" type="checkbox" name="goal">
+                                <label for="goal_3" class="goal-option">
+                                    <span class="checkbox-custom">
+                                        <img src="https://picsum.photos/536/354" alt="Landing page image"> </span>
+                                    <p>Потрібен конверсійний сайт / лендинг, який збільшить кількість продажів</p>
+                                </label>
+                                <input id="goal_4" type="checkbox" name="goal">
+                                <label for="goal_4" class="goal-option">
+                                    <span class="checkbox-custom">
+                                        <img src="https://picsum.photos/536/354" alt="Sales increase image"> </span>
+                                    <p>Байдуже, головне — заявки та збільшення кількості продажів.</p>
+                                </label>
+                            </div>
+                            <button type="button" data-step="02" class="get-started-button next-button button">Далі
+                                <span class="arrow_right preview-button"></span></button>
 
+                        </fieldset>
 
-                            <input id="goal_6" type="checkbox" name="goal">
-                            <label for="goal_6" class="goal-option">
-                                <span class="checkbox-custom">
-                                    <img src="https://picsum.photos/536/354" alt="Landing page image"> </span>
-                                <p>Потрібен конверсійний сайт / лендинг, який збільшить кількість продажів</p>
-                            </label>
+                        <fieldset class="businessDescription forms-style">
+                            <legend>Чим займається ваш бізнес?
+                                Це допоможе нам визначити, яке рішення вам необхідне.</legend>
 
-                        </div>
-
-                        <button type="button" data-step="Vehicle" class=" next-button button">Далі <span
-                                class="arrow_right preview-button"></span></button>
-                    </fieldset>
-
-                <fieldset class="submit-page forms-style">
-                    <legend>Чудово, залишилася остання деталь!</legend>
-                    <p class="submit-page__text">Будемо чесні, після заповнення форми нижче, ми отримаємо вашу заявку і приступимо до підрахунку
-                        вартості проєкту, а також зв'яжемося з вами для БЕЗКОШТОВНОЇ консультації!</p>
-                    <div class="submit-page__content">
-                            <label for="nameInput">
-                                Як вас звати?
+                            <label for="businessDescription">
+                                Чим займається ваш бізнес?
                                 <span class="wpcf7-form-control-wrap text-909">
-                                    <input type="text" name="nameInput" value="" size="40"
+                                    <input type="text" name="businessDescription" value="" size="40"
                                         class="wpcf7-form-control wpcf7-text" aria-invalid="false"
-                                        placeholder="Введіть своє ім’я" />
+                                        placeholder="Впишіть сюди рід ваших занять" />
                                 </span>
                             </label>
-                            <label for="tel-564">
-                                Ваш номер:
-                                <span class="wpcf7-form-control-wrap tel-565 phone-input">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1024px-Flag_of_Ukraine.svg.png"
-                                        alt="Прапор України">
-                                    <input type="tel" name="tel-565" value="" size="40"
-                                        class="wpcf7-form-control wpcf7-tel" aria-invalid="false"
-                                        selectonfocus="true" />
-                                </span>
-                            </label>
-
-
-                        <div >
                             <p>
-                                <span class="wpcf7-form-control-wrap checkbox-379">
-                                    <span class="wpcf7-form-control wpcf7-acceptance" id="checkbox-379">
+                                <span class="wpcf7-form-control-wrap checkbox-380">
+                                    <span class="wpcf7-form-control wpcf7-acceptance" id="checkbox-380">
                                         <span class="wpcf7-list-item">
-                                            <input type="checkbox" id='acceptance-0' name="checkbox-379[]" value="1"
+                                            <input type="checkbox" id='checkbox-380_1' name="checkbox-380[]" value="1"
                                                 aria-invalid="false" />
-                                            <label for="acceptance-0"></label>
-                                            <span class="primary-text_wrapper">Ви погоджуєтесь на обробку <span
-                                                    class="primary">персональних даних</span></span>
+                                            <label for="checkbox-380_1">персональних даних</label>
+
+                                        </span>
+                                        <span class="wpcf7-list-item">
+                                            <input type="checkbox" id='checkbox-380_2' name="checkbox-380[]" value="1"
+                                                aria-invalid="false" />
+                                            <label for="checkbox-380_2">персональних даних</label>
+
+                                        </span>
+                                        <span class="wpcf7-list-item">
+                                            <input type="checkbox" id='checkbox-380_3' name="checkbox-380[]" value="1"
+                                                aria-invalid="false" />
+                                            <label for="checkbox-380_3">персональних даних</label>
+
                                         </span>
                                     </span>
                                 </span>
                             </p>
-                            <input type="submit" value="Отримати безкоштовну консультацію"
-                                class="wpcf7-form-control wpcf7-submit" />
-                        </div>
+
+                            <button type="button" data-step="03" class=" next-button button">Далі <span
+                                    class="arrow_right preview-button"></span></button>
+                        </fieldset>
+                        <fieldset class="additional-services goal-selection-block">
+                            <legend>За необхідності виберіть додаткові послуги, і ми додамо їх у вартість.</legend>
+                            <div class="goal-options">
+
+                                <input id="goal_7" type="checkbox" name="goal">
+                                <label for="goal_7" class="goal-option">
+                                    <span class="checkbox-custom">
+                                        <img src="https://picsum.photos/536/354" alt="Targeted ads image"> </span>
+                                    <p>Потрібне налаштування таргетованої реклами, яка збільшить кількість клієнтів на
+                                        50-350%
+                                    </p>
+                                </label>
+
+
+                                <input id="goal_5" type="checkbox" name="goal">
+                                <label for="goal_5" class="goal-option">
+                                    <span class="checkbox-custom">
+                                        <img src="https://picsum.photos/536/354" alt="Social media promotion image">
+                                    </span>
+                                    <p>Потрібне просування й оформлення в соцмережах, SMM, щоб у них хотілося купувати!
+                                    </p>
+                                </label>
+
+
+                                <input id="goal_6" type="checkbox" name="goal">
+                                <label for="goal_6" class="goal-option">
+                                    <span class="checkbox-custom">
+                                        <img src="https://picsum.photos/536/354" alt="Landing page image"> </span>
+                                    <p class="submit-page__text">Потрібен конверсійний сайт / лендинг, який збільшить
+                                        кількість продажів</p>
+                                </label>
+
+                            </div>
+
+                            <button type="button" data-step="04" class=" next-button button">Далі <span
+                                    class="arrow_right preview-button"></span></button>
+                        </fieldset>
+
+                        <fieldset class="submit-page forms-style">
+                            <legend>Чудово, залишилася остання деталь!</legend>
+                            <p class="submit-page__text">Будемо чесні, після заповнення форми нижче, ми отримаємо вашу
+                                заявку і приступимо до підрахунку
+                                вартості проєкту, а також зв'яжемося з вами для БЕЗКОШТОВНОЇ консультації!</p>
+                            <div class="submit-page__content">
+                                <label for="nameInput">
+                                    Як вас звати?
+                                    <span class="wpcf7-form-control-wrap text-909">
+                                        <input type="text" name="nameInput" value="" size="40"
+                                            class="wpcf7-form-control wpcf7-text" aria-invalid="false"
+                                            placeholder="Введіть своє ім’я" />
+                                    </span>
+                                </label>
+                                <label for="tel-564">
+                                    Ваш номер:
+                                    <span class="wpcf7-form-control-wrap tel-565 phone-input">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1024px-Flag_of_Ukraine.svg.png"
+                                            alt="Прапор України">
+                                        <input type="tel" name="tel-565" value="" size="40"
+                                            class="wpcf7-form-control wpcf7-tel" aria-invalid="false"
+                                            selectonfocus="true" />
+                                    </span>
+                                </label>
+
+
+                                <div class="submit_wrapper">
+                                    <p>
+                                        <span class="wpcf7-form-control-wrap checkbox-379">
+                                            <span class="wpcf7-form-control wpcf7-acceptance" id="checkbox-379">
+                                                <span class="wpcf7-list-item">
+                                                    <input type="checkbox" id='acceptance-0' name="checkbox-379[]"
+                                                        value="1" aria-invalid="false" />
+                                                    <label for="acceptance-0"></label>
+                                                    <span class="primary-text_wrapper">Ви погоджуєтесь на обробку <span
+                                                            class="primary">персональних даних</span></span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </p>
+                                    <input type="submit" value="Отримати безкоштовну консультацію"
+                                        class="wpcf7-form-control wpcf7-submit" />
+                                </div>
+                            </div>
+
+
+                        </fieldset>
+
+
                     </div>
 
+                </div>
+                <div class="calculator-banner">
+                    <img src="../assets/contacts_form/calculate_user.png" alt="calculate_user">
+                    <p class="calculator-banner__text">
 
-                </fieldset>
+                        «Дайте відповіді на кілька запитань і наш <strong>менеджер</strong> зможе зорієнтувати Вас по
+                        вартості проекту»
+                    </p>
 
-
+                </div>
             </div>
+        </sectio>
 
-        </div>
 
 
         <!-- calculator -->

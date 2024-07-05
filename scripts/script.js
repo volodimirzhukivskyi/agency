@@ -102,11 +102,8 @@ $('[name="tel-564"], [name="tel-565"]').mask("+38X 00 000 00 00", {
       });
 
       function addActiveStep() {
-        if (window.innerWidth > 768) {
-          const previousActive = document.querySelector('.step.active');
-          previousActive.classList.remove('active');
-        }
+
         const stepName = this.dataset.step;
-        const stepItem = document.getElementById(stepName).closest('.step');
+        const stepItem = document.getElementById(stepName);
         stepItem.classList.add('active');
       }
