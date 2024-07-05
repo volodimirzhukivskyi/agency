@@ -1550,7 +1550,8 @@
   left: 0;
   bottom: 0;
   margin: auto;
-  top: 186%;
+  top: 100px;
+
   background-color: white;
   width: 1px;
   height: 60px;
@@ -1566,7 +1567,7 @@
   }
   .steps-block .step-number:after {
     content: '';
-    top: 240%;
+    top: 60px;
     background-color: white;
     width: 1px;
     height: 40px;
